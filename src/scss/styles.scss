@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'fonts';
+
+:root{
+   --body_primary_color: #212121;
+    --body_secondary_color: #424242;
+    --subtitle: #212121;
+    --link_hover: #1565c0;
+    --secondary_link: #1976d2;
+    --input_color: #000;
+    --input_border: #e0e0e0;
+    --input_bg: #fff;
+    --info_box_color: #ebf7fc;
+    --info_box_text_color: #1565c0;
+    --icon: #0d47a1;
+    --pagination_active: #1565c0;
+    --pagination_active_text: #fff;
+    --pagination_text: #1565c0;
+    --button_color: #fff;
+    --card_title: #212121;
+    --card-title_hover: #0d47a1;
+    --card_status: #1565c0;
+    --card_link: #1565c0;
+    --card_link_hover: #0d47a1;
+    --card_miniBox_color: #1565c0;
+    --card_miniBox_color_hover: #fff;
+    --quotation_text: #212121;
+    --quotation_quote: #424242;
+    --testimonial_card_name: #212121;
+    --testimonial_card_text: #424242;
+    --footer_line: #eee;
+    --footer_links: #424242;
+    --footer_social: #424242;
+    --footer_copyRight: #424242;
+    --pagination_color: #1565c0;
+    --comment_button_color: #1565c0;
+    --comment_date: #212121;
+    --course_youtube: #0d47a1;
+    --myAccount_link_color: #1565c0;
+    --myAccount_link_color_active: #1565c0;
+    --myAccount_background: #fff;
+    --login_background: #fff;
+    --myAccount_background_active: #ebf7fc;
+    --body_background: #f8f9fa;
+    --body_secondary_background: #eee;
+    --button_background: #1976d2;
+    --button_background_hover: #1565c0;
+    --card_background: #fff;
+    --card_miniBox_background: #ebf7fc;
+    --card_miniBox_background_hover: #1565c0;
+    --product_introduction: #f5f5f5;
+    --cart_introduction: #fff;
+    --comment_background: #fff;
+    --comment_reply_background: #fafafa;
+    --comment_button_background: #ebf7fc;
+    --add_comment_background: #fafafa;
+    --textarea: #fff;
+    transition: all 0.2s;
+}
+
+body{
+color:var(--body_primary_colo);
+font-family:Vazir;
+
+}
