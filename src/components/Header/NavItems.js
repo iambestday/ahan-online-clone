@@ -1,13 +1,18 @@
 import React from 'react'
+//import { AiOutlineHeart } from 'react-icons/fa';
+import { Link } from "react-router-dom"
+
 
 function NavItems() {
   return (
-   
-    <ul className='hidden sm:flex sm:flex-row sm:justify-between sm:ml-8'>
-      <li className='mx-5'>یک</li>
-      <li className='mx-5'>دو</li>
-      <li className='mx-5'>سه</li>
-      <li className='mx-5'>چهار</li>
+    
+
+    <ul className='hidden sm:font-extralight sm:text-sm sm:flex sm:flex-row sm:justify-between sm:ml-8'>
+      <li className='px-1 border-l	divide-slate-400'><Link to="/" >صفحه نخست</Link></li>
+      <li className='px-1 border-l	divide-slate-400'><Link to="/wiki">دانشنامه</Link></li>
+      <li className='px-1 border-l	divide-slate-400'><Link to="/join-us">همکاری با ما</Link></li>
+      <li className='px-1 border-l	divide-slate-400'><Link to="/about-us">درباره ما</Link></li>
+      <li className='px-1'><Link to="/contact-us">تماس ما</Link></li>
     </ul>
   )
 }

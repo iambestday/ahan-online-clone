@@ -1,14 +1,24 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DashboardLayout from "./layouts/dashboard/DashboardLayout";
+import HomeLayout from "./layouts/home/HomeLayout";
+import Error404 from "./layouts/pages/Error404";
+import Wiki from "./layouts/pages/Wiki"
+
+
 
 function App() {
   return (
-    <div className="container px-2 sm:px-5">
-      <Header/>
-      <Main/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeLayout />}/>
+        <Route path="*" element={<Error404 />}/>
+        <Route path="/dashboard" element={<DashboardLayout />}/>
+        <Route path="/wiki" element={<Wiki />}/>
+        
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
