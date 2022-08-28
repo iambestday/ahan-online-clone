@@ -1,6 +1,6 @@
 import Support from "./Support";
-import people from "./people";
-import { BiListCheck } from "react-icons/bi";
+import List from "./List";
+import { BiListCheck ,BiBasket } from "react-icons/bi";
 
 function Prices() {
   const style = { color: `var(--icon)`, fontSize: "1.5em" };
@@ -60,58 +60,59 @@ function Prices() {
                         scope="col"
                         className="px-6 py-3 text-right text-xs font-medium text-gray-500 "
                       >
-                       محل بارگیری
+                      افزودن به سبد
                       </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
-                    {people.map((person) => (
-                      <tr key={person.email}>
+                    {List.map((products) => (
+                      <tr key={products.key}>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="flex items-center">
                             <div className="flex-shrink-0 h-10 w-10">
                               <img
                                 className="h-10 w-10 rounded-full"
-                                src={person.image}
-                                alt=""
+                                key={products.key}
+                                src={require("../../assets/icons/companies/" +products.manufactureIcon)}
+                                alt={products.productName}
                               />
                             </div>
-                            <div className="ml-4">
-                              <div className="text-sm font-medium text-gray-900">
-                                {person.name}
-                              </div>
-                              <div className="text-sm text-gray-500">
-                                {person.email}
-                              </div>
+                            <div className="ml-4 mr-1">
+                            <div className="text-sm font-medium text-gray-900">{products.manufactureName}</div>
+                              <div className="text-sm text-gray-500">{products.productName}</div>
+                             
                             </div>
                           </div>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="text-sm text-gray-900">
-                            {person.title}
+                            {products.productDetails}
                           </div>
-                          <div className="text-sm text-gray-500">
-                            {person.department}
-                          </div>
+                       
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          <span
-                            className="px-2 inline-flex text-xs leading-5
-                      font-semibold rounded-full bg-green-100 text-green-800"
-                          >
-                            موجود در انبار
+                        <div className="text-sm text-gray-500">
+                            {products.productPrice}
+                          </div>
+                         
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap">
+                      <span className="px-2 inline-flex text-xs leading-5
+                      font-semibold rounded-full bg-green-100 text-green-800">
+                       {products.productAvailable + ` در انبار ` + products.storeLocation}
                           </span>
-                        </td>
+                          </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {person.role}
+                          {products.productChartlink}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <a
+                        <td className="px-6 py-4 whitespace-nowrap text-right text-xs font-medium">
+                          <p
                             href="#"
                             className="text-indigo-600 hover:text-indigo-900"
                           >
-                            ویرایش
-                          </a>
+                            <BiBasket style={style} />
+                          </p>
+                          
                         </td>
                       </tr>
                     ))}
@@ -123,7 +124,7 @@ function Prices() {
         </div>
       </div>
 
-      <div className="bg-blue-50		 max-h-screen sm:w-1/5 border border-solid rounded-md p-2">
+    <div className="max-h-screen bg-neutral-100 sm:w-1/5 border border-solid rounded-md ">
         <Support />
       </div>
     </div>

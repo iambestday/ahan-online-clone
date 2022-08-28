@@ -6,4 +6,4 @@ function Join() {
   )
 }
 
-export default join
+export default Join

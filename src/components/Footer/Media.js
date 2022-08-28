@@ -2,8 +2,10 @@ import { AiOutlineInstagram ,AiOutlineLinkedin,AiOutlineWhatsApp} from "react-ic
 
 function Media() {
   return (
-    <div className="flex flex-row">
-        <AiOutlineInstagram/><AiOutlineLinkedin/><AiOutlineWhatsApp/>
+    <div className="grid-cols-3 grid gap-3">
+        <AiOutlineInstagram/>
+        <AiOutlineLinkedin/>
+        <AiOutlineWhatsApp/>
         </div>
   )
 }
