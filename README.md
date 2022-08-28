@@ -12,9 +12,9 @@ what's up guys, this is a react.js clone of online steel prices portal
 
 ## Roadmap 👨‍💻
 
-- Complete functenality of components
+- Complete functionality of components
 
-- Complete pages layoutes & routes 
+- Complete pages layouts & routes 
 
 
 
