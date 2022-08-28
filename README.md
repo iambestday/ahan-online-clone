@@ -1,7 +1,7 @@
 
 # ✅ Ahan Online Clone
 
-what's up guys, this is a react.js clone of online steels prices portal
+what's up guys, this is a react.js clone of online steel prices portal
 
 
 
