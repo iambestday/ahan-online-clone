@@ -3,10 +3,10 @@ import List from "./List"
 import {AiOutlineAudit} from  "react-icons/ai";
 
 function Invoice() {
-  const style = { color: `var(--icon)`, fontSize: "1.3em" };
+  const style = { color: `var(--body_secondary_color)`, fontSize: "1.3em" };
   return (
       <div className="flex sm:flex-row max-h-screen sm:w-full ">
-        <div className="flex flex-col ml-2 sm:w-4/5 h-auto border border-solid rounded-md" >
+        <div className="flex flex-col ml-2 w-full h-auto border border-solid rounded-md" >
         <div className="flex flex-row items-center justify-between px-2">
          <div className="flex flex-row items-center"> 
           <AiOutlineAudit style={style}/>
@@ -67,11 +67,7 @@ function Invoice() {
       </div>
     </div>
          
-    <div className="max-h-screen sm:w-1/5">
-        <div className="border border-solid rounded-md mb-2 p-2">محاسبه هزینه حمل</div>
-        <div className="border border-solid rounded-md mb-2 p-2">محاسبه وزن</div>
-        <div className="border border-solid rounded-md mb-2 p-2">محاسبه زمان</div>
-      </div>
+    
       </div>
     
   );

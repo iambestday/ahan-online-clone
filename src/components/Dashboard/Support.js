@@ -13,12 +13,12 @@ function Support() {
           <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
         </span>
         <BsBookmarkCheck style={style}/>
-      </div>
-
+      
+      <div className="flex flex-row justify-between absolute bottom-0 w-full p-1">
       <p className=" sm:font-extralight sm:text-sm">علی قدوسی</p>
-      <p className=" sm:font-extralight sm:text-sm">
-        کارشناس (آزاد-مورد اطمینان)
-      </p>
+      <p className=" sm:font-extralight sm:text-sm">کارشناس پروفیل</p>
+      </div>
+      </div>
     </div>
   );
 }

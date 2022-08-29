@@ -10,7 +10,7 @@ function Dashboard() {
   return (
    
     <div className="flex flex-row w-full sm:my-3">
-      <div className="w-2/12  border-l	divide-slate-400 ">
+      <div className="w-2/12 pl-2 border-l	divide-slate-400 ">
         <Menu />
       </div>
 

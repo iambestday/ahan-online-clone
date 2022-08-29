@@ -1,13 +1,12 @@
-import Support from "./Support";
 import List from "./List";
 import { BiListCheck ,BiBasket } from "react-icons/bi";
 
 function Prices() {
-  const style = { color: `var(--icon)`, fontSize: "1.5em" };
+  const style = { color: `var(--body_secondary_color)`, fontSize: "1.3em" };
 
   return ( 
    <div className="flex flex-col sm:flex-row justify-between my-4 ">
-      <div className="max-h-screen flex flex-col ml-2 sm:w-4/5 border h-auto border-solid rounded-md">
+      <div className="max-h-screen flex flex-col ml-2 w-full border h-auto border-solid rounded-md">
         <div className="flex flex-row justify-between px-2">
           <div className="flex flex-row items-center">
             <BiListCheck style={style} />
@@ -124,9 +123,7 @@ function Prices() {
         </div>
       </div>
 
-    <div className="max-h-screen bg-neutral-100 sm:w-1/5 border border-solid rounded-md ">
-        <Support />
-      </div>
+    
     </div>
   );
 }
