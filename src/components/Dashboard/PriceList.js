@@ -1,11 +1,13 @@
 import List from "./List";
-import { BiListCheck ,BiBasket } from "react-icons/bi";
+import { BiListCheck, BiBasket } from "react-icons/bi";
+import { Sparklines, SparklinesLine } from "react-sparklines";
 
-function Prices() {
+
+function PriceList() {
   const style = { color: `var(--body_secondary_color)`, fontSize: "1.3em" };
 
-  return ( 
-   <div className="flex flex-col sm:flex-row justify-between my-4 ">
+  return (
+    <div className="flex flex-col sm:flex-row justify-between my-4 ">
       <div className="max-h-screen flex flex-col ml-2 w-full border h-auto border-solid rounded-md">
         <div className="flex flex-row justify-between px-2">
           <div className="flex flex-row items-center">
@@ -40,7 +42,7 @@ function Prices() {
                         scope="col"
                         className="px-6 py-3 text-right text-xs font-medium text-gray-500 "
                       >
-                       قیمت
+                        قیمت
                       </th>
                       <th
                         scope="col"
@@ -59,7 +61,7 @@ function Prices() {
                         scope="col"
                         className="px-6 py-3 text-right text-xs font-medium text-gray-500 "
                       >
-                      افزودن به سبد
+                        افزودن به سبد
                       </th>
                     </tr>
                   </thead>
@@ -72,14 +74,18 @@ function Prices() {
                               <img
                                 className="h-10 w-10 rounded-full"
                                 key={products.key}
-                                src={require("../../assets/icons/companies/" +products.manufactureIcon)}
+                                src={require("../../assets/icons/companies/" +
+                                  products.manufactureIcon)}
                                 alt={products.productName}
                               />
                             </div>
                             <div className="ml-4 mr-1">
-                            <div className="text-sm font-medium text-gray-900">{products.manufactureName}</div>
-                              <div className="text-sm text-gray-500">{products.productName}</div>
-                             
+                              <div className="text-sm font-medium text-gray-900">
+                                {products.manufactureName}
+                              </div>
+                              <div className="text-sm text-gray-500">
+                                {products.productName}
+                              </div>
                             </div>
                           </div>
                         </td>
@@ -87,22 +93,29 @@ function Prices() {
                           <div className="text-sm text-gray-900">
                             {products.productDetails}
                           </div>
-                       
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm text-gray-500">
+                          <div className="text-sm text-gray-500">
                             {products.productPrice}
                           </div>
-                         
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                      <span className="px-2 inline-flex text-xs leading-5
-                      font-semibold rounded-full bg-green-100 text-green-800">
-                       {products.productAvailable + ` در انبار ` + products.storeLocation}
+                          <span
+                            className={
+                              products.productFlag === "true"
+                                ? "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"
+                                : "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800"
+                            }
+                          >
+                            {products.productAvailable +
+                              ` در انبار ` +
+                              products.storeLocation}
                           </span>
-                          </td>
+                        </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {products.productChartlink}
+                          <Sparklines data={products.chartData}>
+                            <SparklinesLine color="blue" />
+                          </Sparklines>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-right text-xs font-medium">
                           <p
@@ -111,7 +124,6 @@ function Prices() {
                           >
                             <BiBasket style={style} />
                           </p>
-                          
                         </td>
                       </tr>
                     ))}
@@ -122,10 +134,8 @@ function Prices() {
           </div>
         </div>
       </div>
-
-    
     </div>
   );
 }
 
-export default Prices;
+export default PriceList;

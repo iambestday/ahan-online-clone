@@ -1,7 +1,7 @@
 import React from "react";
 import Invoice from "./Invoice";
 import Menu from "./Menu";
-import Prices from "./Prices";
+import PriceList from "./PriceList";
 import ProductList from "./ProductList";
 import Steps from "./Steps";
 
@@ -16,7 +16,7 @@ function Dashboard() {
 
       <div className="flex flex-col w-10/12 sm:mr-3">
         <ProductList />
-        <Prices />
+        <PriceList />
         <Steps />
         <Invoice />
       </div>
