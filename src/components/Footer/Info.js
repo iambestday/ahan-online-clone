@@ -4,7 +4,7 @@ export class info extends Component {
   render() {
     return (
       <>
-       <p className="sm:font-extralight sm:text-sm">گروه بازار آهن ایران (سهامی خاص)</p>
+       <p className="text-xs text-gray-500">گروه بازار آهن ایران (سهامی خاص)</p>
       </>
     )
   }

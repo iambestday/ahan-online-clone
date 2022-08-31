@@ -1,9 +1,5 @@
-import React from "react";
-import Invoice from "./Invoice";
 import Menu from "./Menu";
-import PriceList from "./PriceList";
-import ProductList from "./ProductList";
-import Steps from "./Steps";
+import { Outlet } from "react-router-dom";
 
 
 function Dashboard() {
@@ -15,10 +11,7 @@ function Dashboard() {
       </div>
 
       <div className="flex flex-col w-10/12 sm:mr-3">
-        <ProductList />
-        <PriceList />
-        <Steps />
-        <Invoice />
+      <Outlet />
       </div>
     </div>
   

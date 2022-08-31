@@ -7,7 +7,7 @@ function NavItems() {
   return (
     
 
-    <ul className='hidden sm:font-extralight sm:text-sm sm:flex sm:flex-row sm:justify-between sm:ml-8'>
+    <ul className='hidden text-sm text-gray-500 sm:flex sm:flex-row sm:justify-between sm:ml-8'>
       <li className='px-1 border-l	divide-slate-400'><Link to="/" >صفحه نخست</Link></li>
       <li className='px-1 border-l	divide-slate-400'><Link to="/wiki">دانشنامه</Link></li>
       <li className='px-1 border-l	divide-slate-400'><Link to="/join-us">همکاری با ما</Link></li>

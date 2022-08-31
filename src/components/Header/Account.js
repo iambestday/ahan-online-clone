@@ -5,7 +5,7 @@ function Account() {
     const accountStyle = { color: "white", fontSize: "1.3em" };
   return (
     <div className='bg-blue-600 text-white p-2 rounded-3xl mr-2'>
-   <Link to="/dashboard"><BsFillFilePersonFill style={accountStyle}/></Link>
+   <Link to="/signup"><BsFillFilePersonFill style={accountStyle}/></Link>
 </div>
   )
 }

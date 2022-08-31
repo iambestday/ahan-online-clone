@@ -6,8 +6,8 @@ import NavItems from "./NavItems";
 
 function Header() {
   return (
-    <>
-      <header className="flex flex-col border-b divide-slate-400">
+  
+      <header className="flex flex-col border-b pb-1 divide-slate-400">
         <Alert />
         <nav className="flex flex-row items-center max-h-screen justify-between">
           <Logo />
@@ -18,7 +18,7 @@ function Header() {
           </div>
         </nav>
       </header>
-    </>
+    
   );
 }
 

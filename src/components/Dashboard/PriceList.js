@@ -7,7 +7,7 @@ function PriceList() {
   const style = { color: `var(--body_secondary_color)`, fontSize: "1.3em" };
 
   return (
-    <div className="flex flex-col sm:flex-row justify-between my-4 ">
+    <div className="flex flex-col sm:flex-row justify-between ">
       <div className="max-h-screen flex flex-col ml-2 w-full border h-auto border-solid rounded-md">
         <div className="flex flex-row justify-between px-2">
           <div className="flex flex-row items-center">
