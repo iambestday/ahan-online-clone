@@ -1,11 +1,13 @@
-import Logo from "../../components/Header/Logo"
+import { Outlet } from "react-router-dom"
+import FooterLayout from "./FooterLayout"
+import HeaderLayout from "./HeaderLayout"
 
 function HomeLayout() {
   return (
     <div className="container">
-      <div className='flex items-center justify-center h-screen '>
-       <Logo size=""/>
-      </div>
+      <HeaderLayout/>
+      <Outlet />
+      <FooterLayout />
     </div>
   )
 }
