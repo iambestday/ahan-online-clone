@@ -1,6 +1,6 @@
-import Header from "../../components/header";
-import Dashboard from "../../components/dashboard";
-import Footer from "../../components/footer";
+import Header from "../../components/Header";
+import Dashboard from "../../components/Dashboard";
+import Footer from "../../components/Footer";
 
 function DashboardLayout() {
   return (
@@ -8,7 +8,7 @@ function DashboardLayout() {
       <Header />
       <Dashboard />
       <Footer />
-    </div>
+      </div>
   );
 }
 
