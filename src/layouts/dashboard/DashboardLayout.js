@@ -1,6 +1,6 @@
-import Header from "../../components/Header";
-import Dashboard from "../../components/Dashboard";
-import Footer from "../../components/Footer";
+import Header from "../../components/header";
+import Dashboard from "../../components/dashboard";
+import Footer from "../../components/footer";
 
 function DashboardLayout() {
   return (

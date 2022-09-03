@@ -1,7 +1,7 @@
-import PriceList from "../../components/Dashboard/PriceList";
-import ProductList from "../../components/Dashboard/ProductList";
-import Steps from "../../components/Dashboard/Steps";
-import Invoice from "../../components/Dashboard/Invoice";
+import PriceList from "../../components/dashboard/PriceList";
+import ProductList from "../../components/dashboard/ProductList";
+import Steps from "../../components/dashboard/Steps";
+import Invoice from "../../components/dashboard/Invoice";
 
 
 

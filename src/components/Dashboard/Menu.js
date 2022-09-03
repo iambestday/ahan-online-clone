@@ -14,12 +14,11 @@ function Menu() {
   return (
     <div className="flex flex-col h-full justify-between ">
       <div>
-        <p className="sm:text-xs sm:font-extralight ">
-          آقای مهندس اصغری خوش آمدید
-        </p>
-        <p className="bottom-0 relative sm:text-xs sm:font-extralight ">
-          آخرین ورود شما :{" "}
-        </p>
+        <div className="p-3 w-full h-auto  bg-gray-100 rounded-lg">
+        <p className="sm:text-xs sm:font-extralight">آقای مهندس اصغری خوش آمدید</p>
+        <p className=" sm:text-xs sm:font-extralight">آخرین ورود شما :</p>
+        </div>
+        
         <ul className="sm:font-extralight sm:text-sm text-gray-500 my-5 ">
           <Link to="new">
             <li className="flex flex-row py-2 items-center pr-1 rounded-lg hover:bg-gray-100 hover:text-gray-700">

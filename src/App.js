@@ -24,8 +24,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomeLayout />}>
-        <Route index element={<MainLayout />} />
         <Route path="*" element={<Error404 />}/>
+        <Route index element={<MainLayout />} />
         <Route path="/wiki" element={<Wiki />}/>
         <Route path="/join-us" element={<Join/>}/>
         <Route path="/about-us" element={<About/>}/>

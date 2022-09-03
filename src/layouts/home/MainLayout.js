@@ -1,7 +1,11 @@
-import PriceList from "../../components/Dashboard/PriceList";
+import PriceList from "../../components/dashboard/PriceList";
+import Carousel from "../../components/home/Carousel";
+import CTA from "../../components/home/CTA";
 
 function MainLayout() {
   return (
+    <>
+    <Carousel/>
     <div className="px-4 my-5 mx-auto max-w-screen-xl flex flex-row sm:px-6 lg:px-6">
       <details
         open
@@ -26,8 +30,7 @@ function MainLayout() {
                 />
 
                 <label htmlFor="toy" className="mr-3 text-xs font-medium">
-                  {" "}
-                  Toy{" "}
+                 محصول 1
                 </label>
               </div>
 
@@ -40,8 +43,7 @@ function MainLayout() {
                 />
 
                 <label htmlFor="game" className="mr-3 text-xs font-medium">
-                  {" "}
-                  Game{" "}
+                محصول 2
                 </label>
               </div>
 
@@ -54,7 +56,7 @@ function MainLayout() {
                 />
 
                 <label htmlFor="outdoor" className="mr-3 text-xs font-medium">
-                  Outdoor
+                  محصول 3
                 </label>
               </div>
 
@@ -82,8 +84,7 @@ function MainLayout() {
                   />
 
                   <label htmlFor="3+" className="mr-3 text-xs font-medium">
-                    {" "}
-                    3+{" "}
+                 کارخانه 1
                   </label>
                 </div>
 
@@ -96,8 +97,7 @@ function MainLayout() {
                   />
 
                   <label htmlFor="8+" className="mr-3 text-xs font-medium">
-                    {" "}
-                    8+{" "}
+                کارخانه 2
                   </label>
                 </div>
 
@@ -110,8 +110,7 @@ function MainLayout() {
                   />
 
                   <label htmlFor="12+" className="mr-3 text-xs font-medium">
-                    {" "}
-                    12+{" "}
+               کارخانه 3
                   </label>
                 </div>
 
@@ -124,8 +123,7 @@ function MainLayout() {
                   />
 
                   <label htmlFor="16+" className="mr-3 text-xs font-medium">
-                    {" "}
-                    16+{" "}
+                کارخانه 4
                   </label>
                 </div>
 
@@ -153,7 +151,10 @@ function MainLayout() {
       <div className="w-4/5 mr-3">
         <PriceList />
       </div>
+     
     </div>
+     <CTA />
+     </>
   );
 }
 

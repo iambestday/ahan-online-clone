@@ -1,5 +1,5 @@
-import Logo from "../../components/Header/Logo";
-import NavItems from "../../components/Header/NavItems";
+import Logo from "../../components/header/Logo";
+import NavItems from "../../components/header/NavItems";
 import { useNavigate } from "react-router-dom";
 
 function HeaderLayout() {
