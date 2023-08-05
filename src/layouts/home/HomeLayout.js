@@ -4,7 +4,7 @@ import HeaderLayout from "./HeaderLayout"
 
 function HomeLayout() {
   return (
-    <div className="container mx-auto px-4"">
+    <div className="px-4 py-4">
       <HeaderLayout/>
       <Outlet />
       <FooterLayout />
