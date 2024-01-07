@@ -7,7 +7,6 @@
 ##  👀 Demo 
 ![Screenshot (106)](https://user-images.githubusercontent.com/94782242/187092423-092a92ba-d04b-42dd-b180-31de32da8322.png)
 
-https://ahan-online-clone-hf5atmr9d-iambestday.vercel.app/dashboard
 
 [Home
 ](https://ahan-online-clone-hf5atmr9d-iambestday.vercel.app/)
